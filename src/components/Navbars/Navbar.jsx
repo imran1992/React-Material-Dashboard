@@ -2,23 +2,21 @@ import React from "react";
 import classNames from "classnames";
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Hidden from "@material-ui/core/Hidden";
+import { withStyles } from "@material-ui/core/styles";
+import { AppBar, Toolbar, IconButton, Hidden } from "@material-ui/core";
+
 // @material-ui/icons
-import Menu from "@material-ui/icons/Menu";
+import { Menu } from "@material-ui/icons";
 // core components
 import AdminNavbarLinks from "./AdminNavbarLinks.jsx";
 import RTLNavbarLinks from "./RTLNavbarLinks.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import Button from "../CustomButtons/Button.jsx";
 
-import headerStyle from "assets/jss/material-dashboard-react/components/headerStyle.jsx";
+import headerStyle from "../../assets/jss/material-dashboard-react/components/headerStyle.jsx";
 
-function Header({ ...props }) {
+const Header = ({ ...props }) => {
   function makeBrand() {
-    var name;
+    let name;
     props.routes.map((prop, key) => {
       if (prop.layout + prop.path === props.location.pathname) {
         name = props.rtlActive ? prop.rtlName : prop.name;
@@ -55,7 +53,7 @@ function Header({ ...props }) {
       </Toolbar>
     </AppBar>
   );
-}
+};
 
 Header.propTypes = {
   classes: PropTypes.object.isRequired,

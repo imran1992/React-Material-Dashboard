@@ -1,18 +1,17 @@
 import React from "react";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Close from "@material-ui/icons/Close";
-import Check from "@material-ui/icons/Check";
+import { Close, Check } from "@material-ui/icons";
 // core components
-import GridItem from "components/Grid/GridItem.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import Danger from "components/Typography/Danger.jsx";
-import Success from "components/Typography/Success.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import Danger from "../../components/Typography/Danger.jsx";
+import Success from "../../components/Typography/Success.jsx";
+import Button from "../../components/CustomButtons/Button.jsx";
+import Card from "../../components/Card/Card.jsx";
+import CardHeader from "../../components/Card/CardHeader.jsx";
+import CardBody from "../../components/Card/CardBody.jsx";
 
 const styles = {
   cardCategoryWhite: {
@@ -81,7 +80,7 @@ const styles = {
   }
 };
 
-function UpgradeToPro(props) {
+const UpgradeToPro = props => {
   const { classes } = props;
   return (
     <GridContainer justify="center">
@@ -207,6 +206,6 @@ function UpgradeToPro(props) {
       </GridItem>
     </GridContainer>
   );
-}
+};
 
 export default withStyles(styles)(UpgradeToPro);

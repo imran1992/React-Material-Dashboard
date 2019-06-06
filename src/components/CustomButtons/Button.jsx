@@ -5,11 +5,11 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 
 // material-ui components
-import withStyles from "@material-ui/core/styles/withStyles";
-import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
+import { Button } from "@material-ui/core";
 
-import buttonStyle from "assets/jss/material-dashboard-react/components/buttonStyle.jsx";
-function RegularButton({ ...props }) {
+import buttonStyle from "../../assets/jss/material-dashboard-react/components/buttonStyle.jsx";
+const RegularButton = ({ ...props }) => {
   const {
     classes,
     color,
@@ -42,7 +42,7 @@ function RegularButton({ ...props }) {
       {children}
     </Button>
   );
-}
+};
 
 RegularButton.propTypes = {
   classes: PropTypes.object.isRequired,

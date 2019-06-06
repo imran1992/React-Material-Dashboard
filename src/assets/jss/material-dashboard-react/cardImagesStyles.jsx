@@ -1,4 +1,4 @@
-const cardImagesStyles = {
+export default {
   cardImgTop: {
     width: "100%",
     borderTopLeftRadius: "calc(.25rem - 1px)",
@@ -22,5 +22,3 @@ const cardImagesStyles = {
     borderRadius: "calc(.25rem - 1px)"
   }
 };
-
-export default cardImagesStyles;

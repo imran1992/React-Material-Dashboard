@@ -8,9 +8,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 
 // core components
-import cardBodyStyle from "assets/jss/material-dashboard-react/components/cardBodyStyle.jsx";
+import cardBodyStyle from "../../assets/jss/material-dashboard-react/components/cardBodyStyle.jsx";
 
-function CardBody({ ...props }) {
+const CardBody = ({ ...props }) => {
   const { classes, className, children, plain, profile, ...rest } = props;
   const cardBodyClasses = classNames({
     [classes.cardBody]: true,
@@ -23,7 +23,7 @@ function CardBody({ ...props }) {
       {children}
     </div>
   );
-}
+};
 
 CardBody.propTypes = {
   classes: PropTypes.object.isRequired,

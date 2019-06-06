@@ -2,9 +2,9 @@ import {
   drawerWidth,
   transition,
   container
-} from "assets/jss/material-dashboard-react.jsx";
+} from "../../material-dashboard-react.jsx";
 
-const appStyle = theme => ({
+export default theme => ({
   wrapper: {
     position: "relative",
     top: "0",
@@ -33,5 +33,3 @@ const appStyle = theme => ({
     marginTop: "70px"
   }
 });
-
-export default appStyle;

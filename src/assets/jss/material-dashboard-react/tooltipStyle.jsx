@@ -1,6 +1,5 @@
-import { blackColor, hexToRgb } from "assets/jss/material-dashboard-react.jsx";
-
-const tooltipStyle = {
+import { blackColor, hexToRgb } from "../material-dashboard-react.jsx";
+export default {
   tooltip: {
     padding: "10px 15px",
     minWidth: "130px",
@@ -31,4 +30,3 @@ const tooltipStyle = {
     lineBreak: "auto"
   }
 };
-export default tooltipStyle;

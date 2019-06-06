@@ -13,9 +13,9 @@ import {
   grayColor,
   blackColor,
   hexToRgb
-} from "assets/jss/material-dashboard-react.jsx";
+} from "../../material-dashboard-react.jsx";
 
-const sidebarStyle = theme => ({
+export default theme => ({
   drawerPaper: {
     border: "none",
     position: "fixed",
@@ -297,5 +297,3 @@ const sidebarStyle = theme => ({
     }
   }
 });
-
-export default sidebarStyle;

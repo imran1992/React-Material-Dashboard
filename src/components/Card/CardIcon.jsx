@@ -4,13 +4,13 @@ import classNames from "classnames";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import cardIconStyle from "assets/jss/material-dashboard-react/components/cardIconStyle.jsx";
+import cardIconStyle from "../../assets/jss/material-dashboard-react/components/cardIconStyle.jsx";
 
-function CardIcon({ ...props }) {
+const CardIcon = ({ ...props }) => {
   const { classes, className, children, color, ...rest } = props;
   const cardIconClasses = classNames({
     [classes.cardIcon]: true,
@@ -22,7 +22,7 @@ function CardIcon({ ...props }) {
       {children}
     </div>
   );
-}
+};
 
 CardIcon.propTypes = {
   classes: PropTypes.object.isRequired,

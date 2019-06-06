@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import ListItem from "@material-ui/core/ListItem";
-import List from "@material-ui/core/List";
+import { withStyles } from "@material-ui/core/styles";
+import { ListItem, List } from "@material-ui/core";
 // core components
-import footerStyle from "assets/jss/material-dashboard-react/components/footerStyle.jsx";
+import footerStyle from "../../assets/jss/material-dashboard-react/components/footerStyle.jsx";
 
-function Footer({ ...props }) {
+const Footer = ({ ...props }) => {
   const { classes } = props;
   return (
     <footer className={classes.footer}>
@@ -48,7 +47,7 @@ function Footer({ ...props }) {
       </div>
     </footer>
   );
-}
+};
 
 Footer.propTypes = {
   classes: PropTypes.object.isRequired

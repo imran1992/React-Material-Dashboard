@@ -1,13 +1,13 @@
 import React from "react";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core/styles";
 // core components
-import GridItem from "components/Grid/GridItem.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import Table from "components/Table/Table.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import Table from "../../components/Table/Table.jsx";
+import Card from "../../components/Card/Card.jsx";
+import CardHeader from "../../components/Card/CardHeader.jsx";
+import CardBody from "../../components/Card/CardBody.jsx";
 
 const styles = {
   cardCategoryWhite: {
@@ -39,7 +39,7 @@ const styles = {
   }
 };
 
-function TableList(props) {
+const TableList = props => {
   const { classes } = props;
   return (
     <GridContainer>
@@ -107,6 +107,6 @@ function TableList(props) {
       </GridItem>
     </GridContainer>
   );
-}
+};
 
 export default withStyles(styles)(TableList);

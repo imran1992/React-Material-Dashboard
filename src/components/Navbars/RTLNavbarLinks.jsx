@@ -1,24 +1,24 @@
 import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import MenuItem from "@material-ui/core/MenuItem";
-import MenuList from "@material-ui/core/MenuList";
-import Grow from "@material-ui/core/Grow";
-import Paper from "@material-ui/core/Paper";
-import ClickAwayListener from "@material-ui/core/ClickAwayListener";
-import Hidden from "@material-ui/core/Hidden";
-import Poppers from "@material-ui/core/Popper";
-// @material-ui/icons
-import Person from "@material-ui/icons/Person";
-import Notifications from "@material-ui/icons/Notifications";
-import Dashboard from "@material-ui/icons/Dashboard";
-import Search from "@material-ui/icons/Search";
-// core components
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+import { withStyles } from "@material-ui/core/styles";
+import {
+  MenuItem,
+  MenuList,
+  Grow,
+  Paper,
+  ClickAwayListener,
+  Hidden,
+  Popper as Poppers
+} from "@material-ui/core";
 
-import rtlHeaderLinksStyle from "assets/jss/material-dashboard-react/components/rtlHeaderLinksStyle.jsx";
+// @material-ui/icons
+import { Person, Notifications, Dashboard, Search } from "@material-ui/icons";
+// core components
+import CustomInput from "../CustomInput/CustomInput.jsx";
+import Button from "../CustomButtons/Button.jsx";
+
+import rtlHeaderLinksStyle from "../../assets/jss/material-dashboard-react/components/rtlHeaderLinksStyle.jsx";
 
 class HeaderLinks extends React.Component {
   state = {

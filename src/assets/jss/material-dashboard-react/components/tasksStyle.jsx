@@ -3,10 +3,10 @@ import {
   primaryColor,
   dangerColor,
   grayColor
-} from "assets/jss/material-dashboard-react.jsx";
-import tooltipStyle from "assets/jss/material-dashboard-react/tooltipStyle.jsx";
-import checkboxAdnRadioStyle from "assets/jss/material-dashboard-react/checkboxAdnRadioStyle.jsx";
-const tasksStyle = {
+} from "../../material-dashboard-react.jsx";
+import tooltipStyle from "../../material-dashboard-react/tooltipStyle.jsx";
+import checkboxAdnRadioStyle from "../../material-dashboard-react/checkboxAdnRadioStyle.jsx";
+export default {
   ...tooltipStyle,
   ...checkboxAdnRadioStyle,
   table: {
@@ -54,4 +54,3 @@ const tasksStyle = {
     boxShadow: "none"
   }
 };
-export default tasksStyle;

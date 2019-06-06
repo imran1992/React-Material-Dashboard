@@ -8,9 +8,9 @@ import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
 // core components
 
-import cardAvatarStyle from "assets/jss/material-dashboard-react/components/cardAvatarStyle.jsx";
+import cardAvatarStyle from "../../assets/jss/material-dashboard-react/components/cardAvatarStyle.jsx";
 
-function CardAvatar({ ...props }) {
+const CardAvatar = ({ ...props }) => {
   const { classes, children, className, plain, profile, ...rest } = props;
   const cardAvatarClasses = classNames({
     [classes.cardAvatar]: true,
@@ -23,7 +23,7 @@ function CardAvatar({ ...props }) {
       {children}
     </div>
   );
-}
+};
 
 CardAvatar.propTypes = {
   children: PropTypes.node.isRequired,

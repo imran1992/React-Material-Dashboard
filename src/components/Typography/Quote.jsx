@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core/styles";
 // core components
-import typographyStyle from "assets/jss/material-dashboard-react/components/typographyStyle.jsx";
+import typographyStyle from "../../assets/jss/material-dashboard-react/components/typographyStyle.jsx";
 
-function Quote({ ...props }) {
+const Quote = ({ ...props }) => {
   const { classes, text, author } = props;
   return (
     <blockquote className={classes.defaultFontStyle + " " + classes.quote}>
@@ -13,7 +13,7 @@ function Quote({ ...props }) {
       <small className={classes.quoteAuthor}>{author}</small>
     </blockquote>
   );
-}
+};
 
 Quote.propTypes = {
   classes: PropTypes.object.isRequired,

@@ -2,11 +2,10 @@ import {
   defaultFont,
   dangerColor,
   whiteColor
-} from "assets/jss/material-dashboard-react.jsx";
+} from "../../material-dashboard-react.jsx";
+import dropdownStyle from "../../material-dashboard-react/dropdownStyle.jsx";
 
-import dropdownStyle from "assets/jss/material-dashboard-react/dropdownStyle.jsx";
-
-const headerLinksStyle = theme => ({
+export default theme => ({
   ...dropdownStyle(theme),
   search: {
     "& > div": {
@@ -109,5 +108,3 @@ const headerLinksStyle = theme => ({
     display: "inline-block"
   }
 });
-
-export default headerLinksStyle;

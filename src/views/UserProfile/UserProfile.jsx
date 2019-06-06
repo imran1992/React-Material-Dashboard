@@ -1,19 +1,19 @@
 import React from "react";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import InputLabel from "@material-ui/core/InputLabel";
+import { withStyles } from "@material-ui/core/styles";
+import { InputLabel } from "@material-ui/core";
 // core components
-import GridItem from "components/Grid/GridItem.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardAvatar from "components/Card/CardAvatar.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import CustomInput from "../../components/CustomInput/CustomInput.jsx";
+import Button from "../../components/CustomButtons/Button.jsx";
+import Card from "../../components/Card/Card.jsx";
+import CardHeader from "../../components/Card/CardHeader.jsx";
+import CardAvatar from "../../components/Card/CardAvatar.jsx";
+import CardBody from "../../components/Card/CardBody.jsx";
+import CardFooter from "../../components/Card/CardFooter.jsx";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "../../assets/img/faces/marc.jpg";
 
 const styles = {
   cardCategoryWhite: {
@@ -34,7 +34,7 @@ const styles = {
   }
 };
 
-function UserProfile(props) {
+const UserProfile = props => {
   const { classes } = props;
   return (
     <div>
@@ -173,6 +173,6 @@ function UserProfile(props) {
       </GridContainer>
     </div>
   );
-}
+};
 
 export default withStyles(styles)(UserProfile);

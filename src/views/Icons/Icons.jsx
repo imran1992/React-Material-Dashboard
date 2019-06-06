@@ -1,18 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import Hidden from "@material-ui/core/Hidden";
+import { withStyles } from "@material-ui/core/styles";
+import { Hidden } from "@material-ui/core";
 // core components
-import GridItem from "components/Grid/GridItem.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardBody from "components/Card/CardBody.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import Card from "../../components/Card/Card.jsx";
+import CardHeader from "../../components/Card/CardHeader.jsx";
+import CardBody from "../../components/Card/CardBody.jsx";
 
-import iconsStyle from "assets/jss/material-dashboard-react/views/iconsStyle.jsx";
+import iconsStyle from "../../assets/jss/material-dashboard-react/views/iconsStyle.jsx";
 
-function Icons(props) {
+const Icons = props => {
   const { classes } = props;
   return (
     <GridContainer>
@@ -62,7 +62,7 @@ function Icons(props) {
       </GridItem>
     </GridContainer>
   );
-}
+};
 
 Icons.propTypes = {
   classes: PropTypes.object.isRequired

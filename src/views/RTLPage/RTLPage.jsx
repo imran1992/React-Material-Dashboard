@@ -4,45 +4,48 @@ import PropTypes from "prop-types";
 // react plugin for creating charts
 import ChartistGraph from "react-chartist";
 // @material-ui/core
-import withStyles from "@material-ui/core/styles/withStyles";
-import Icon from "@material-ui/core/Icon";
+import { withStyles } from "@material-ui/core/styles";
+import { Icon } from "@material-ui/core";
 // @material-ui/icons
-import Store from "@material-ui/icons/Store";
-import Warning from "@material-ui/icons/Warning";
-import DateRange from "@material-ui/icons/DateRange";
-import LocalOffer from "@material-ui/icons/LocalOffer";
-import Update from "@material-ui/icons/Update";
-import ArrowUpward from "@material-ui/icons/ArrowUpward";
-import AccessTime from "@material-ui/icons/AccessTime";
-import Accessibility from "@material-ui/icons/Accessibility";
-import BugReport from "@material-ui/icons/BugReport";
-import Code from "@material-ui/icons/Code";
-import Cloud from "@material-ui/icons/Cloud";
+import {
+  Store,
+  Warning,
+  DateRange,
+  LocalOffer,
+  ArrowUpward,
+  Update,
+  AccessTime,
+  Accessibility,
+  BugReport,
+  Code,
+  Cloud
+} from "@material-ui/icons";
+
 // core components
-import Button from "components/CustomButtons/Button.jsx";
-import GridItem from "components/Grid/GridItem.jsx";
-import GridContainer from "components/Grid/GridContainer.jsx";
-import Table from "components/Table/Table.jsx";
-import Tasks from "components/Tasks/Tasks.jsx";
-import CustomTabs from "components/CustomTabs/CustomTabs.jsx";
-import Danger from "components/Typography/Danger.jsx";
-import Card from "components/Card/Card.jsx";
-import CardHeader from "components/Card/CardHeader.jsx";
-import CardAvatar from "components/Card/CardAvatar.jsx";
-import CardIcon from "components/Card/CardIcon.jsx";
-import CardBody from "components/Card/CardBody.jsx";
-import CardFooter from "components/Card/CardFooter.jsx";
-import SnackbarContent from "components/Snackbar/SnackbarContent.jsx";
+import Button from "../../components/CustomButtons/Button.jsx";
+import GridItem from "../../components/Grid/GridItem.jsx";
+import GridContainer from "../../components/Grid/GridContainer.jsx";
+import Table from "../../components/Table/Table.jsx";
+import Tasks from "../../components/Tasks/Tasks.jsx";
+import CustomTabs from "../../components/CustomTabs/CustomTabs.jsx";
+import Danger from "../../components/Typography/Danger.jsx";
+import Card from "../../components/Card/Card.jsx";
+import CardHeader from "../../components/Card/CardHeader.jsx";
+import CardAvatar from "../../components/Card/CardAvatar.jsx";
+import CardIcon from "../../components/Card/CardIcon.jsx";
+import CardBody from "../../components/Card/CardBody.jsx";
+import CardFooter from "../../components/Card/CardFooter.jsx";
+import SnackbarContent from "../../components/Snackbar/SnackbarContent.jsx";
 
 import {
   dailySalesChart,
   emailsSubscriptionChart,
   completedTasksChart
-} from "variables/charts.jsx";
+} from "../../variables/charts.jsx";
 
-import rtlStyle from "assets/jss/material-dashboard-react/views/rtlStyle.jsx";
+import rtlStyle from "../../assets/jss/material-dashboard-react/views/rtlStyle.jsx";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "../../assets/img/faces/marc.jpg";
 
 let bugs = [
   "طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن؟",

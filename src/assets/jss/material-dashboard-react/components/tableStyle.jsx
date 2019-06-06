@@ -7,9 +7,8 @@ import {
   roseColor,
   grayColor,
   defaultFont
-} from "assets/jss/material-dashboard-react.jsx";
-
-const tableStyle = theme => ({
+} from "../../material-dashboard-react.jsx";
+export default theme => ({
   warningTableHeader: {
     color: warningColor[0]
   },
@@ -56,5 +55,3 @@ const tableStyle = theme => ({
     overflowX: "auto"
   }
 });
-
-export default tableStyle;

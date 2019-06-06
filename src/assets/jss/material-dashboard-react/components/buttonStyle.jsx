@@ -9,9 +9,9 @@ import {
   whiteColor,
   blackColor,
   hexToRgb
-} from "assets/jss/material-dashboard-react.jsx";
+} from "../../material-dashboard-react.jsx";
 
-const buttonStyle = {
+export default {
   button: {
     minHeight: "auto",
     minWidth: "auto",
@@ -338,5 +338,3 @@ const buttonStyle = {
     }
   }
 };
-
-export default buttonStyle;

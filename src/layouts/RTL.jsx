@@ -6,19 +6,16 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import PerfectScrollbar from "perfect-scrollbar";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 // @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
+import { withStyles } from "@material-ui/core/styles";
 // core components
-import Navbar from "components/Navbars/Navbar.jsx";
-import Footer from "components/Footer/Footer.jsx";
-import Sidebar from "components/Sidebar/Sidebar.jsx";
-import FixedPlugin from "components/FixedPlugin/FixedPlugin.jsx";
-
-import routes from "routes.js";
-
-import rtlStyle from "assets/jss/material-dashboard-react/layouts/rtlStyle.jsx";
-
-import image from "assets/img/sidebar-2.jpg";
-import logo from "assets/img/reactlogo.png";
+import Navbar from "../components/Navbars/Navbar.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import Sidebar from "../components/Sidebar/Sidebar.jsx";
+import FixedPlugin from "../components/FixedPlugin/FixedPlugin.jsx";
+import routes from "../routes";
+import rtlStyle from "../assets/jss/material-dashboard-react/layouts/rtlStyle.jsx";
+import image from "../assets/img/sidebar-2.jpg";
+import logo from "../assets/img/reactlogo.png";
 
 const switchRoutes = (
   <Switch>

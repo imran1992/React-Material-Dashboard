@@ -9,9 +9,9 @@ import {
   dangerColor,
   whiteColor,
   grayColor
-} from "assets/jss/material-dashboard-react.jsx";
+} from "../../material-dashboard-react.jsx";
 
-const headerStyle = theme => ({
+export default theme => ({
   appBar: {
     backgroundColor: "transparent",
     boxShadow: "none",
@@ -77,5 +77,3 @@ const headerStyle = theme => ({
     ...defaultBoxShadow
   }
 });
-
-export default headerStyle;
